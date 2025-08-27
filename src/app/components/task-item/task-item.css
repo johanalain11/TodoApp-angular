@@ -1,0 +1,13 @@
+.task-item {
+  padding: 4px 10px;
+  margin: 10px 0px;
+  background-color: #e7eee4;
+}
+.task-item.reminder {
+  border-left: 7px solid green;
+}
+.task-item h3 {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
