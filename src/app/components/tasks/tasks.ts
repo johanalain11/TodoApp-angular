@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import {Task} from '../../Task';
 import { TaskItem } from '../task-item/task-item';
 import { TaskService } from '../../services/task';
+import { AddTask } from '../add-task/add-task';
 
 @Component({
   selector: 'app-tasks',
-  imports: [TaskItem],
+  imports: [TaskItem, AddTask],
   templateUrl: './tasks.html',
   styleUrl: './tasks.css'
 })
@@ -30,4 +31,11 @@ export class Tasks {
     task.reminder = !task.reminder;
     this.taskService.updateTaskReminder(task).subscribe();
   }
+
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((newTask: Task) => {
+      this.tasks.push(newTask);
+    });
+  }
+
 }

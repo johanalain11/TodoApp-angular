@@ -1,0 +1,30 @@
+form {
+  background-color:bisque;
+  padding: 5px;
+}
+label {
+  margin-bottom: 5px;
+  width: 100px;
+  display: inline-block;
+}
+.form-control input {
+  padding: 5px;
+  margin: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  margin-block: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
