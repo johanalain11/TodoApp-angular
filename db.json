@@ -4,7 +4,7 @@
       "id": "1",
       "text": "Rendez-vous chez le médecin",
       "day": "5 mai à 14h00",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "id": "3",
       "text": "Courses au supermarché",
       "day": "7 mai à 10h00",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": "4",

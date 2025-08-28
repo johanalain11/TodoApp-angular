@@ -12,8 +12,4 @@ export class Button {
 
   constructor() {}
 
-  onClick() {
-    console.log('Button clicked!');
-  }
-
-} 
+}
