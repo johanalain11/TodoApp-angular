@@ -9,9 +9,7 @@ export class UiService {
   private subject: Subject<boolean> = new Subject<boolean>();
 
   toggleAddTask(): void {
-    console.log('Show AddTask 1', this.showAddTask);
     this.showAddTask = !this.showAddTask;
-    console.log('Show AddTask 2', this.showAddTask);
     this.subject.next(this.showAddTask);
   }
 

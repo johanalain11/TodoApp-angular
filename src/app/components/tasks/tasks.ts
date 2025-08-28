@@ -3,10 +3,11 @@ import {Task} from '../../Task';
 import { TaskItem } from '../task-item/task-item';
 import { TaskService } from '../../services/task';
 import { AddTask } from '../add-task/add-task';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tasks',
-  imports: [TaskItem, AddTask],
+  imports: [TaskItem, AddTask, RouterLink],
   templateUrl: './tasks.html',
   styleUrl: './tasks.css'
 })
