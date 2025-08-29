@@ -1,59 +1,140 @@
-# TodoApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 
-## Development server
+# ✅ Projet TodoApp (Angular + JSON Server)
 
-To start a local development server, run:
+![Angular](https://img.shields.io/badge/Angular-20-red?style=for-the-badge&logo=angular) ![TypeScript](https://img.shields.io/badge/TypeScript-Lang-blue?style=for-the-badge&logo=typescript) ![JSON-Server](https://img.shields.io/badge/JSON--Server-Mock%20API-orange?style=for-the-badge&logo=json) ![Node.js](https://img.shields.io/badge/Node.js-22-green?style=for-the-badge&logo=node.js) ![MIT License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge) ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
-```bash
+---
+
+## 📖 Description
+**TodoApp** est une application web moderne de gestion de tâches développée avec **Angular 20**.  
+Les tâches sont **stockées dans un fichier `db.json` et gérées via une API REST simulée avec [json-server](https://github.com/typicode/json-server)**.  
+
+---
+
+## 🚀 Fonctionnalités
+
+![Fonctionnalités](./public/features.png "Fonctionnalités TodoApp")
+
+#### ✅ Ajouter une tâche avec un titre  
+#### ✅ Afficher dynamiquement la liste des tâches via `@for`  
+#### ✅ Supprimer une tâche en base (`db.json`)  
+#### ✅ Communication avec une **API REST mockée** grâce à `json-server`  
+
+---
+
+## 🛠️ Technologies utilisées
+- 🅰️ **Angular 20** — Framework front-end  
+- 🟦 **TypeScript** — Langage principal  
+- 📦 **JSON Server** — API REST fake pour simuler un backend  
+- ⚡ **Node.js (20+)** — Environnement 
+
+---
+
+## 📦 Installation et Utilisation
+
+### 1️⃣ Cloner le projet
+```sh
+git clone https://github.com/ton-profil/todoapp.git
+cd todoapp
+
+```
+
+### 2️⃣ Installer les dépendances
+```sh
+npm install
+```
+
+### 3️⃣ Lancer l'API JSON Server
+
+Le fichier __db.json__ contient les tâches (stockage local). 
+```sh
+npm npx json-server --watch db.json --port 3000
+```
+
+➡️ L’API sera disponible à l’adresse :
+-   `GET http://localhost:3000/tasks`
+-   `POST http://localhost:3000/tasks`
+-   `DELETE http://localhost:3000/tasks/:id`
+
+### 4️⃣ Lancer l’application Angular
+```sh
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+➡️ Ouvrir dans le navigateur 👉 [http://localhost:4200](http://localhost:4200)
 
-## Code scaffolding
+## 📂 Structure du projet
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+>/todoapp
 
-```bash
-ng generate component component-name
-```
+├── /src
+│ ├── /app
+ │ │ ├── /components
+ │ │ │ ├── /about
+ │ │ │ ├── /add-task
+ │ │ │ ├── /button
+ │ │ │ ├── /header
+ │ │ │ ├── /task-item
+ │ │ │ └── /tasks
+ │ │ ├── /services
+ │ │ ├── app.config.ts
+ │ │ ├── app.css
+ │ │ ├── app.html
+ │ │ ├── app.routes.ts
+ │ │ ├── app.spec.ts
+ │ │ ├── app.ts
+ │ │ └── Tasks.ts # interface de la structure d'une tâche
+ │ ├── index.html
+ │ ├── main.ts
+ │ └── styles.css
+ ├── angular.json
+ ├── db.json # Base de données locale (JSON Server)
+ ├── package.json
+ ├── README.md
+ ├── tsconfig.app.json
+ ├── tsconfig.json
+ ├── tsconfig.spec.json
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🎨 Aperçu de l'Interface
+![Interface](./public/apercu.png "Interface de l'application")
 
-## Building
+---
 
-To build the project run:
+## 📊 Exemple d’Utilisation
 
-```bash
-ng build
-```
+1.  Ajout d’une tâche avec un titre
+2.  Persistance de la tâche dans `db.json` via **JSON Server**
+3.  Suppression d’une tâche → mise à jour en base locale
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+----------
 
-## Running unit tests
+## 🔮 Améliorations Futures
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+> [!NOTE]
+> 
+> -   Ajouter la modification d’une tâche (PUT / PATCH)
+> -   Ajouter un filtre pour les tâches terminées / en cours
+> -   Persister les données dans une vraie base (ex: MySQL, MongoDB)
+> -   Déployer une version en ligne (Netlify / Vercel + API hébergée)
+> -   Ajouter **TailwindCSS** pour une site bien responsive
+>     
+----------
 
-```bash
-ng test
-```
+## Auteur
+**Johan Alain**
 
-## Running end-to-end tests
+[GitHub](https://github.com/johanalain11/)
 
-For end-to-end (e2e) testing, run:
+## 📜 Licence
 
-```bash
-ng e2e
-```
+Ce projet est sous licence MIT.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+----------
 
-## Additional Resources
+✨ **N’hésite pas à contribuer !**  
+💡 **Suggestions et retours sont les bienvenus !** 😊  
+📩 **Contact :** [LinkedIn](www.linkedin.com/in/johanalain11) | Email [jank092016@gmail.com](mailto:jank092016@gmail.com)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
