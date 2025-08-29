@@ -65,36 +65,36 @@ ng serve
 ➡️ Ouvrir dans le navigateur 👉 [http://localhost:4200](http://localhost:4200)
 
 ## 📂 Structure du projet
-
->/todoapp
-
+```bash
+/todoapp
 ├── /src
-│ ├── /app
- │ │ ├── /components
- │ │ │ ├── /about
- │ │ │ ├── /add-task
- │ │ │ ├── /button
- │ │ │ ├── /header
- │ │ │ ├── /task-item
- │ │ │ └── /tasks
- │ │ ├── /services
- │ │ ├── app.config.ts
- │ │ ├── app.css
- │ │ ├── app.html
- │ │ ├── app.routes.ts
- │ │ ├── app.spec.ts
- │ │ ├── app.ts
- │ │ └── Tasks.ts # interface de la structure d'une tâche
- │ ├── index.html
- │ ├── main.ts
- │ └── styles.css
- ├── angular.json
- ├── db.json # Base de données locale (JSON Server)
- ├── package.json
- ├── README.md
- ├── tsconfig.app.json
- ├── tsconfig.json
- ├── tsconfig.spec.json
+│   ├── /app
+│   │   ├── /components
+│   │   │   ├── /about
+│   │   │   ├── /add-task
+│   │   │   ├── /button
+│   │   │   ├── /header
+│   │   │   ├── /task-item
+│   │   │   └── /tasks
+│   │   ├── /services
+│   │   ├── app.config.ts
+│   │   ├── app.css
+│   │   ├── app.html
+│   │   ├── app.routes.ts
+│   │   ├── app.spec.ts
+│   │   ├── app.ts
+│   │   └── Tasks.ts      # Interface de la structure d'une tâche
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── angular.json
+├── db.json               # Base de données locale (JSON Server)
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+```
 
 ---
 
