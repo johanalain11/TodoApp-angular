@@ -3,25 +3,25 @@
     {
       "id": "1",
       "text": "Rendez-vous chez le médecin",
-      "day": "5 mai à 14h00",
+      "day": "2025-05-05T14:00",
       "reminder": true
     },
     {
       "id": "2",
       "text": "Réunion avec Bob",
-      "day": "6 mai à 13h00",
+      "day": "2025-05-06T13:00",
       "reminder": false
     },
     {
       "id": "3",
       "text": "Courses au supermarché",
-      "day": "7 mai à 10h00",
+      "day": "2025-05-07T10:00",
       "reminder": false
     },
     {
       "id": "4",
       "text": "Séance de gym",
-      "day": "8 mai à 18h00",
+      "day": "2025-05-08T14:00",
       "reminder": true
     }
   ]

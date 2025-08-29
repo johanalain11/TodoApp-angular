@@ -3,5 +3,5 @@
     {{ task?.text }}
     <fa-icon [icon]="faTimes" (click)="onDelete(task)"></fa-icon>
   </h3>
-  <p>{{ task?.day }}</p>
+  <p>{{ task?.day | date: "EEEE d MMMM 'à' HH:mm" }}</p> <!-- Pipe Date pour formater la date -->
 </div>
