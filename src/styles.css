@@ -1,5 +1,11 @@
 body {
   background-color: lightgrey;
+  background-image: url('../public/bg3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
 }
 
 /* You can add global styles to this file, and also import other style files */

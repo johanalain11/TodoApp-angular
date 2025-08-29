@@ -1,7 +1,7 @@
 <div class="task-item" [class.reminder]="task?.reminder" (dblclick)="onToggle(task)">
   <h3>
     {{ task?.text }}
-    <fa-icon [icon]="faTimes" (click)="onDelete(task)"></fa-icon>
+    <fa-icon [icon]="faTimes" [style]="{color: 'red'}" (click)="onDelete(task)"></fa-icon>
   </h3>
   <p>{{ task?.day | date: "EEEE d MMMM 'à' HH:mm" }}</p> <!-- Pipe Date pour formater la date -->
 </div>

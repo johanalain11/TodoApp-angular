@@ -2,6 +2,13 @@ button {
   padding: 7px 13px;
   font-weight: bold;
   color: #fff;
-  border-radius: 5px;
   font-size: larger;
+  margin-top: 25px;
+  border: none;
+}
+
+button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  transition: 400ms ease-in-out;
 }
